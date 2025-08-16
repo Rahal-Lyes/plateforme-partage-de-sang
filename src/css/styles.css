@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* VARIABLE GLOBAL && COLOR*/
+:root {
+
+  --rouge: rgb(255, 0, 0);
+  --blanch: hsl(0, 0%, 100%);
+  --bleu1: hsl(201, 92%, 47%);
+  --bleu2: hsl(218, 70%, 18%);
+  --bleu3: hsl(225, 68%, 53%);
+
+  --gris: hsl(0, 0%, 47%);
+
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+
+}
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+/* ***************************    START  HOME    PAGE    *************************  */
+
+.home article:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  min-height:100vh;
+  margin: 0 auto;
+
+
+}
+.swiper {
+  width: 90%;
+  height: 100%;
+ 
+}
+
+
+.content-msg {
+  width: 60%;
+  height: 80%;
+  padding-top: 40px;
+  position: absolute;
+  bottom: 0; 
+  left: 40px;
+   padding: 20px;
+  color:var(--bleu2);
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  
+}
+
+home-image svg{
+  min-height:50%;
+  min-width: 70%;
+}
+
+.blood-donation {
+  color: var(--bleu1);
+  padding: 30px;
+  font-weight: 900;
+  text-transform: capitalize;
+  min-width: 500px;
+}
+
+.content-msg p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-left: 20px;
+  line-height: 1.5;
+  color: var(--gris);
+  min-width: 400px;
+}
+
+.home-image svg {
+  margin-top: 150px;
+  width: 380px;
+  height: 380px;
+
+}
+
+.btn-container {
+  margin-top: 1.3rem;
+  width: 80%;
+  height: 30%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+
+}
+
+
+
+.btn:hover {
+  background-image: linear-gradient(var(--deg, 45deg), var(--bleu1) 50%,
+      rgba(53, 0, 200, 0.5));
+}
+
+.btn {
+
+  background-image: linear-gradient(var(--deg, 90deg), var(--bleu1) 0%,
+      var(--bleu3) 100%);
+  width: 12rem;
+  height: 5rem;
+  font-size: 23px;
+  border-radius: 15px;
+  padding: 5px;
+
+  text-align: center;
+  color: var(--blanch);
+  font-weight: 500;
+  border: none;
+  box-shadow: 4px 4px 4px rgba(7, 7, 7, 0.5);
+  cursor: pointer;
+
+}
+
+
+
+.blood-donation{
+  text-shadow: 0 1px 0 #efefef,
+  0 2px 0 #efefef,
+  0 3px 0 #efefef,
+  0 4px 0 #efefef,
+  0 10px 5px rgba(0,0,0,.1);  
+  
+}
+.scroll{
+  position:fixed;
+  bottom:30px;
+  right:-40px;
+  width:38px;
+  height:38px;
+  border-radius: 10px;
+  cursor: pointer;
+  color:var(--blanch);
+  transition: 0.5s ease;
+  background-color: #1a79ca;
+}
+.scroll.scrollShow{
+  right: 15px;
+}
+
+@media (max-width: 700px) {
+  .background {
+   visibility: hidden;
+   background-color: var(--blanch);
+   width:100%;
+  
+  }
+}
+/* *********************    END  HOME  PAGE   ************************ */
+
+/****************************    START STYLE  FIND DONOR   PAGE    ************************* */
+
+
+
+
+
+/* *********************    END STYLE DONOR PAGE   *************************/
+
+/* ***************************    START  ABOUT   PAGE    *************************  */
+.about {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-img {
+  background-image: url(../images/jpg/bg_3.jpg);
+  width: 90%;
+  height: 70%;
+  min-width: 300px;
+  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+  box-shadow: 2px 10px 2px rgba(53, 0, 200, 0.5), rgba(53, 0, 200, 0.5);
+}
+
+.about-left, .about-right {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.img-about {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  background-color: #9b59b6;
+  margin: 0 auto;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.h1, .h2 {
+  padding: 1rem;
+  color: var(--bleu1);
+  font-size: 2.3vw;
+  margin-left: 2rem;
+  text-align: center;
+}
+
+.h2 {
+  color: var(--bleu2);
+}
+
+.content p {
+  color: var(--gris);
+  line-height: 1.7;
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+.blood-about {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+ 
+
+  .blood-about {
+    display: none;
+  }
+
+  .img-about {
+    display: none;
+  }
+
+  .h1, .h2 {
+    font-size: 5vw;
+    margin-left: 0;
+  }
+
+  .content p {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-left, .about-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-img {
+    display: none;
+  }
+}
+
+/* *********************    END  About  PAGE   ************************ */
+
+
+/* ***************************    START  REGISTER   PAGE    *************************  */
+
+.register {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-bg {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-register {
+  max-width: 700px;
+  width: 100%;
+  padding: 10px;
+  min-width: auto;
+}
+
+.register-image {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  margin: 20px 0;
+}
+
+.registre-img {
+  width: 90%;
+  height: 300px;
+  border-radius: 17px;
+  background-image: url(../images/registration.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.registre-p {
+  width: 90%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.registre-p h3 {
+  padding: 1rem;
+  color: var(--bleu2);
+  font-size: 1.8rem;
+}
+
+.registre-p p {
+  padding: 10px;
+  color: var(--gris);
+  line-height: 1.7;
+}
+
+.registre-signin {
+  color: var(--bleu1);
+  font-size: 2.9rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .register-image {
+    flex-direction: row;
+    height: 500px;
+  }
+
+  .registre-img, .registre-p {
+    width: 45%;
+    height: 85%;
+  }
+
+  .registre-p {
+    margin-left: 40px;
+    text-align: left;
+  }
+
+  .registre-p h3 {
+    font-size: 2.3rem;
+    margin-left: 2rem;
+  }
+
+  .registre-p p {
+    line-height: 2.5;
+  }
+}
+
+.container-register form .user-details {
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border:2px solid black; */
+}
+
+form .user-details .input-box {
+
+  /* width: 100%; */
+  width:calc(100% /2);
+
+  /* margin: 20px 0 12px 0; */
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.user-details .input-box .details {
+  font-weight: 500;
+  margin: 10px;
+  display: block;
+  color: var(--bleu2);
+}
+.user-details .input-box{
+  width:100%;
+}
+
+.user-details .input-box input {
+  width: 95%;
+  height: 45px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #9b59b6;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3 ease;
+}
+.checkbox{
+  /* background-color: #71b7e6 ; */
+  display: flex;
+  padding:10px;
+ 
+}
+.checkbox div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.user-details .input-box select {
+  width: 95%;
+  height: 45px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #9b59b6;
+
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3 ease;
+  background-color: var(--blanch);
+}
+
+
+
+.genderSexe{
+  margin-top:20px;
+}
+
+form .gender-details {
+  width: 100%;
+  
+}
+
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .gender-details .category {
+  margin: 14px 0;
+  width: 80%;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.gender-details .category label {
+  display: flex;
+  align-items: center;
+  color: var(--bleu2);
+}
+
+
+
+
+
+form input[type="radio"] {
+  display: none;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+#submit-btn {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+  letter-spacing: 3px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  margin-top: 30px;
+}
+
+#submit-btn:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  cursor: pointer;
+}
+.already-reg {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+
+.input-box small{
+  position: absolute;
+  bottom: -25px;
+  left: 20px;
+  visibility: hidden;
+}
+
+.input-box.success input {
+  border: 2px solid #2ecc71;
+}
+.input-box.error input {
+  border: 2px solid #e74c3c;
+}
+
+
+.input-box.success select {
+  border: 2px solid #2ecc71;
+}
+.input-box.error select {
+  border: 2px solid #e74c3c;
+}
+
+
+.input-box.error small{
+  color:#e74c3c;
+  visibility: visible;
+}
+.input-box.success small{
+  color: #2ecc71;
+  visibility: visible;
+}
+.btn-register button{
+padding-left:10px;
+}
+
+
+#response{
+  width:100%;
+  height: 60px;
+  
+  font-size: 29px;
+  border-radius: 10px;
+  visibility: hidden;
+
+}
+#response p{
+  padding: 10px;
+  text-align: center;
+
+}
+.successMsg{
+  color:#2ecc71;
+}
+.fieldMsg{
+  color:#e74c3c;
+}
+
+
+
+@media (max-width: 584px) {
+  .container-register {
+    max-width: 100%;
+    height: auto;
+  }
+  .register-image{
+    flex-direction: column;
+  }
+
+  form .user-details .input-box {
+    width: 100%;
+    
+  }
+
+  form .gender-details .category {
+    width: 100%;
+  }
+}
+
+  /* *********************    END  REGISTER  PAGE   ************************ */
+
+
+
+
+
+/* ***************************    START  FOOTER   PAGE    *************************  */
+
+
+
+  /* *********************    END  FOOTER PAGE   ************************ */
+
+
+/* ***************************    START  LOGIN POPUP  PAGE    *************************  */
+.popup{
+  position: absolute;
+  z-index: 30;
+  top:-50%;
+  left:50%;
+  opacity: 0;
+  transform:translate(-50%,50%) scale(1.25);
+  width:600px;
+  padding: 20px 30px;
+  background-image: url(../images/menu_bg.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position: center;
+  
+  box-shadow:5px 5px 5px rgba(12, 12, 12, 0.15);
+  border-radius:18px;
+  transition: top 0ms ease-in-out 200ms,
+              opacity 200ms ease-in-out 0ms,
+              transform  20ms ease-in-out 0ms;
+
+
+}
+
+.popup.active{
+  top:0;
+  opacity: 1;
+  transform:translate(-50%,50%) scale(1); 
+  transition: top 0ms ease-in-out 0ms,
+  opacity 200ms ease-in-out 0ms,
+  transform  20ms ease-in-out 0ms;
+  
+ 
+ 
+}
+.popup .close-btn{
+  position: absolute;
+  top:13px;
+  right:20px;
+  width:40px;
+  height:40px;
+   border:1px solid var(--blanch);
+  color:var(--rouge);
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.popup .form h2{
+  text-align: center;
+  color:var(--blanch);
+  margin:10px 0 20px;
+  font-size: 28px;
+
+}
+.popup .form .form-element{
+  margin:15px 0px;
+}
+.popup .form .form-element label{
+  font-size:23px;
+  color:var(--blanch);
+
+}
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"]{
+margin-top: 5px;
+display: block;
+width:100%;
+padding:10px;
+
+outline: none;
+border: 1px solid #aaa;
+border-radius: 5px;
+}
+.popup .form .form-element input[type="checkbox"]{
+  margin-right: 5px;
+
+}
+.popup .form-element button{
+  width:100%;
+  height:40px;
+  border: none;
+  outline: none;
+  font-size:15px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color:#f5f5f5;
+  border-radius:10px;
+  cursor: pointer;
+}
+
+.popup .form-element button:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  cursor: pointer;
+}
+.popup .form .form-element a{
+  display: block;
+  text-align: right;
+  font-size: 23px;
+  color:#1a79ca;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+
+.msg-pop{
+  color:red;
+  margin:2px;
+  padding-left:20px;
+  width:100%;
+  height:27px;
+  font-size: 25px;
+
+}
+
+
+/* ***************************    END  LOGIN   PAGE    *************************  */
+
+  
+
+
+
+
+
+
+
+
+  /*  PRELOADER*/
+
+  #preloader {
+    background: var(--blanch) url(../images/pleloader2.gif) no-repeat center center;
+    background-size: 40%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+  }

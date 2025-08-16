@@ -1,0 +1,20 @@
+{
+  "name": "plateform-don-de-sang",
+  "version": "1.0.0",
+  "description": "La plateforme de donneurs de sang vise à combler un vide critique 
+  dans l'accès \r  aux ressources vitales pour les patients nécessitant des transfusions 
+  sanguines.\r  Chaque année, des millions de vies sont touchées par des conditions médicales
+   \r  nécessitant des transfusions de sang, que ce soit en raison de blessures graves, \r
+     de maladies chroniques ou de complications lors d'interventions chirurgicales. \r  
+     Cependant, l'approvisionnement en sang adéquat et opportun reste un défi majeur \r  
+     dans de nombreuses régions du monde.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lyes Rahal && Hocine Ait Rahman",
+  "license": "ISC",
+  "dependencies": {
+   
+  }
+}
